@@ -1,0 +1,200 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DiplomchikFlowers.ProfileWindow"
+        Title="👤 Мой профиль"
+        WindowStartupLocation="CenterOwner"
+        Width="600"
+        Height="750"
+        MinWidth="550"
+        MinHeight="650"
+        Icon="/Images/rose.ico"
+        FontFamily="Segoe UI, sans-serif"
+        CanResize="True">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FFF8F3FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#FF7A4B7C"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#FF2D2D2D"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#FF777777"/>
+        <SolidColorBrush x:Key="InputBorder" Color="#FFE1D5E6"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#FFE74C3C"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#FF27AE60"/>
+        <SolidColorBrush x:Key="BorderBrush" Color="#FFE5E5E5"/>
+        <LinearGradientBrush x:Key="WindowGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0" Color="#FFF5F0F6"/>
+            <GradientStop Offset="1" Color="#FFE8DFF0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#FF9B6B9D"/>
+            <GradientStop Offset="1" Color="#FFB083B5"/>
+        </LinearGradientBrush>
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="20" Opacity="0.15" Color="Black"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource InputBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="14,12"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style Selector="TextBox:focus">
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Transitions">
+                <Setter.Value>
+                    <Transitions>
+                        <DoubleTransition Property="Opacity" Duration="0:0:0.2"/>
+                    </Transitions>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="{StaticResource AccentDark}"/>
+        </Style>
+
+        <Style Selector="Button.outline">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+        <Style Selector="Button.outline:pointerover">
+            <Setter Property="Background" Value="#20B083B5"/>
+        </Style>
+
+        <Style Selector="Button.secondary">
+            <Setter Property="Background" Value="#F0F0F0"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style Selector="Button.secondary:pointerover">
+            <Setter Property="Background" Value="#E0E0E0"/>
+        </Style>
+
+        <Style Selector="Expander">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="Expander > ToggleButton">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource InputBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="14,10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style Selector="TextBlock.header">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+        </Style>
+    </Window.Styles>
+    <Grid Background="{StaticResource WindowGradient}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>   
+            <RowDefinition Height="*"/>     
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                Background="{StaticResource HeaderGradient}"
+                CornerRadius="0,0,20,20"
+                Padding="20,15">
+            <TextBlock Text="👤 Мой профиль"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"/>
+        </Border>
+        <ScrollViewer Grid.Row="1" Margin="30,25,30,25">
+            <Border Background="{StaticResource CardBrush}"
+                    CornerRadius="30"
+                    Effect="{StaticResource CardShadow}"
+                    Padding="30,25">
+                <StackPanel Spacing="5">
+                    <TextBlock Text="Фото профиля"/>
+                    <Grid ColumnDefinitions="Auto, *" Margin="0,5,0,15">
+                        <Border Grid.Column="0" Width="90" Height="90" CornerRadius="45"
+                                Background="#F5F5F5" BorderBrush="{StaticResource InputBorder}" BorderThickness="1"
+                                Margin="0,0,20,0">
+                            <Image x:Name="AvatarImage" Stretch="UniformToFill" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                                   Width="86" Height="86"/>
+                        </Border>
+                        <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="8">
+                            <Button Content="📷 Загрузить аватар" Click="UploadAvatar_Click" 
+                                    Classes="outline" HorizontalAlignment="Left"/>
+                            <Button x:Name="RemoveAvatarButton" Content="🗑 Удалить аватар" Click="RemoveAvatar_Click" 
+                                    Classes="outline" HorizontalAlignment="Left" IsVisible="False"/>
+                        </StackPanel>
+                    </Grid>
+                    <TextBlock Text="Личные данные" Margin="0,10,0,5"/>
+                    
+                    <TextBlock Text="Полное имя *" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                    <TextBox x:Name="FullNameBox" Watermark="Иванов Иван Иванович"/>
+
+                    <TextBlock Text="Email *" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                    <TextBox x:Name="EmailBox" Watermark="example@mail.com"/>
+
+                    <TextBlock Text="Телефон *" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                    <TextBox x:Name="PhoneBox" Watermark="+7 (123) 456-78-90"/>
+
+                    <TextBlock Text="Город" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                    <TextBox x:Name="CityBox" Watermark="Москва"/>
+
+                    <TextBlock Text="Адрес" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                    <TextBox x:Name="AddressBox" Watermark="ул. Цветочная, д. 1, кв. 1"/>
+                    <Expander Header="🔒 Сменить пароль" Margin="0,15,0,0">
+                        <StackPanel Margin="0,15,0,5">
+                            <TextBlock Text="Текущий пароль" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                            <TextBox x:Name="CurrentPasswordBox" PasswordChar="●" Watermark="Введите текущий пароль"/>
+
+                            <TextBlock Text="Новый пароль" FontSize="12" Foreground="{StaticResource TextSecondary}" Margin="0,10,0,0"/>
+                            <TextBox x:Name="NewPasswordBox" PasswordChar="●" Watermark="Новый пароль (мин. 6 символов)"/>
+
+                            <TextBlock Text="Подтверждение пароля" FontSize="12" Foreground="{StaticResource TextSecondary}" Margin="0,10,0,0"/>
+                            <TextBox x:Name="ConfirmPasswordBox" PasswordChar="●" Watermark="Повторите новый пароль"/>
+                        </StackPanel>
+                    </Expander>
+                    <TextBlock x:Name="ErrorTextBlock" Foreground="{StaticResource ErrorBrush}" 
+                               FontSize="12" TextWrapping="Wrap" Margin="0,15,0,0" IsVisible="False"/>
+                    <TextBlock x:Name="SuccessTextBlock" Foreground="{StaticResource SuccessBrush}" 
+                               FontSize="12" TextWrapping="Wrap" Margin="0,15,0,0" IsVisible="False"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,25,0,0" Spacing="15">
+                        <Button Content="💾 Сохранить изменения" Classes="primary" Click="Save_Click"/>
+                        <Button Content="✖ Отмена" Classes="secondary" Click="Cancel_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Window>

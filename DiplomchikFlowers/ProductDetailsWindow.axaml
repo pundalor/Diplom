@@ -1,0 +1,280 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DiplomchikFlowers"
+        x:Class="DiplomchikFlowers.ProductDetailsWindow"
+        Title="Информация о товаре"
+        Width="1000"
+        Height="800"
+        MinWidth="800"
+        MinHeight="700"
+        x:CompileBindings="False"
+        WindowStartupLocation="CenterOwner"
+        Icon="/Images/rose.ico"
+        FontFamily="Segoe UI, sans-serif"
+        CanResize="True">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FFF8F3FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#FF7A4B7C"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#FF2D2D2D"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#FF777777"/>
+        <SolidColorBrush x:Key="InputBorder" Color="#FFE1D5E6"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#FFE74C3C"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#FF27AE60"/>
+        <SolidColorBrush x:Key="PriceBrush" Color="#FFE67E22"/>
+        <SolidColorBrush x:Key="OldPriceBrush" Color="#FFAAAAAA"/>
+        <SolidColorBrush x:Key="BorderBrush" Color="#FFE5E5E5"/>
+        <LinearGradientBrush x:Key="WindowGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0" Color="#FFF5F0F6"/>
+            <GradientStop Offset="1" Color="#FFE8DFF0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#FF9B6B9D"/>
+            <GradientStop Offset="1" Color="#FFB083B5"/>
+        </LinearGradientBrush>
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="20" Opacity="0.12" Color="Black"/>
+        <DropShadowEffect x:Key="HeaderShadow" BlurRadius="10" Opacity="0.15" Color="Black"/>
+        <local:ImagePathConverter x:Key="ImagePathConverter"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Transitions">
+                <Setter.Value>
+                    <Transitions>
+                        <DoubleTransition Property="Opacity" Duration="0:0:0.2"/>
+                    </Transitions>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="{StaticResource AccentDark}"/>
+        </Style>
+
+        <Style Selector="Button.outline">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="14,8"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+        <Style Selector="Button.outline:pointerover">
+            <Setter Property="Background" Value="#20B083B5"/>
+        </Style>
+
+        <Style Selector="Button.danger">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource ErrorBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ErrorBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="12,8"/>
+        </Style>
+        <Style Selector="Button.danger:pointerover">
+            <Setter Property="Background" Value="#20E74C3C"/>
+        </Style>
+
+        <Style Selector="Button.backButton">
+            <Setter Property="Background" Value="#40FFFFFF"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.backButton:pointerover">
+            <Setter Property="Background" Value="#60FFFFFF"/>
+        </Style>
+
+        <Style Selector="ScrollViewer">
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+        <Style Selector="TextBlock.header">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+    </Window.Styles>
+    <Grid Background="{StaticResource WindowGradient}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>  
+            <RowDefinition Height="*"/>     
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                Background="{StaticResource HeaderGradient}"
+                Effect="{StaticResource HeaderShadow}"
+                CornerRadius="0,0,20,20"
+                Padding="20,15">
+            <StackPanel Orientation="Horizontal" Spacing="15">
+                <Button Content="← Назад" Classes="backButton" Click="Back_Click"/>
+                <TextBlock Text="🌸 Информация о товаре"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        <ScrollViewer Grid.Row="1" Margin="30,25,30,25">
+            <Border Background="{StaticResource CardBrush}"
+                    CornerRadius="30"
+                    Effect="{StaticResource CardShadow}"
+                    Padding="30,25">
+                <Grid RowDefinitions="Auto,Auto"
+                      ColumnDefinitions="1.5*, 2*">
+                    <Border Grid.Row="0" Grid.Column="0"
+                            CornerRadius="20"
+                            Background="#FFF5F5F5"
+                            Margin="0,0,25,0"
+                            Height="400"
+                            VerticalAlignment="Top">
+                        <Image Source="{Binding Product.ImageUrl, Converter={StaticResource ImagePathConverter}}"
+                               Stretch="Uniform"
+                               Margin="15"/>
+                    </Border>
+                    <StackPanel Grid.Row="0" Grid.Column="1" Spacing="12">
+                        <TextBlock Text="{Binding Product.Name}"
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   TextWrapping="Wrap"
+                                   Foreground="{StaticResource TextPrimary}"/>
+                        <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding DiscountedPrice, StringFormat='{}{0:C}'}"
+                                       FontSize="34"
+                                       FontWeight="Bold"
+                                       Foreground="{StaticResource PriceBrush}"/>
+                            <TextBlock Text="{Binding Product.Price, StringFormat='{}{0:C}'}"
+                                       FontSize="20"
+                                       Foreground="{StaticResource OldPriceBrush}"
+                                       TextDecorations="Strikethrough"
+                                       IsVisible="{Binding HasDiscount}"/>
+                            <Border Background="#FFE74C3C"
+                                    CornerRadius="12"
+                                    Padding="10,4"
+                                    IsVisible="{Binding HasDiscount}">
+                                <TextBlock Text="{Binding DiscountPercent, StringFormat='-{0}%'}"
+                                           FontSize="14"
+                                           Foreground="White"
+                                           FontWeight="Bold"/>
+                            </Border>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Spacing="8" Margin="0,5,0,0">
+                            <TextBlock Text="🌿 Наличие:" FontWeight="SemiBold" Foreground="{StaticResource TextSecondary}"/>
+                            <TextBlock Text="{Binding Product.StockQuantity, StringFormat='шт: {0}'}"
+                                       Foreground="{Binding StockColor}"/>
+                        </StackPanel>
+                        <Border BorderBrush="{StaticResource BorderBrush}"
+                                BorderThickness="0,1"
+                                Padding="0,12"
+                                Margin="0,5,0,5">
+                            <TextBlock Text="{Binding Product.Description}"
+                                       TextWrapping="Wrap"
+                                       FontSize="14"
+                                       Foreground="{StaticResource TextSecondary}"/>
+                        </Border>
+                        <StackPanel Orientation="Horizontal" Spacing="12" Margin="0,10,0,0">
+                            <Button Content="🛒 В корзину" Classes="primary" Click="AddToCart_Click"/>
+                            <Button Content="{Binding FavoriteButtonText}" Classes="outline" Click="ToggleFavorite_Click"/>
+                            <Button Content="💬 Написать отзыв" Classes="outline" Click="WriteReview_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2"
+                            Margin="0,35,0,0"
+                            CornerRadius="20"
+                            BorderBrush="{StaticResource BorderBrush}"
+                            BorderThickness="1"
+                            Padding="20">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Center"
+                                        Spacing="25">
+                                <TextBlock Text="📝 Отзывы"
+                                           FontSize="20"
+                                           FontWeight="Bold"
+                                           Foreground="{StaticResource TextPrimary}"/>
+                                <StackPanel Orientation="Horizontal"
+                                            VerticalAlignment="Center"
+                                            Spacing="8">
+                                    <TextBlock Text="⭐ Средний рейтинг:" Foreground="{StaticResource TextSecondary}"/>
+                                    <TextBlock Text="{Binding AverageRating}"
+                                               Foreground="Orange"
+                                               FontWeight="Bold"
+                                               FontSize="16"/>
+                                    <TextBlock Text="/ 5" Foreground="{StaticResource TextSecondary}"/>
+                                    <TextBlock Text="•" Margin="5,0"/>
+                                    <TextBlock Text="{Binding ReviewsCount, StringFormat='отзывов: {0}'}"
+                                               Foreground="{StaticResource TextSecondary}"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <Border Height="1"
+                                    Background="{StaticResource BorderBrush}"
+                                    Margin="0,15,0,15"/>
+
+                            <ScrollViewer MaxHeight="300">
+                                <ItemsControl ItemsSource="{Binding RecentReviews}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Border Margin="0,0,0,12"
+                                                    Padding="15"
+                                                    Background="#FFF9F9F9"
+                                                    CornerRadius="16">
+                                                <StackPanel Spacing="6">
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="{Binding CustomerName}"
+                                                                   FontWeight="Bold"
+                                                                   FontSize="14"
+                                                                   Foreground="{StaticResource TextPrimary}"/>
+                                                        <TextBlock Text=" • "
+                                                                   Margin="6,0"
+                                                                   Foreground="{StaticResource TextSecondary}"/>
+                                                        <TextBlock Text="{Binding Rating}"
+                                                                   Foreground="Orange"
+                                                                   FontWeight="Bold"/>
+                                                        <TextBlock Text=" • "
+                                                                   Margin="6,0"
+                                                                   Foreground="{StaticResource TextSecondary}"/>
+                                                        <TextBlock Text="{Binding CreatedAt, StringFormat='dd.MM.yyyy'}"
+                                                                   Foreground="{StaticResource TextSecondary}"
+                                                                   FontSize="12"/>
+                                                    </StackPanel>
+                                                    <TextBlock Text="{Binding DisplayComment}"
+                                                               TextWrapping="Wrap"
+                                                               FontSize="13"
+                                                               Foreground="{StaticResource TextSecondary}"/>
+                                                </StackPanel>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </ScrollViewer>
+
+                            <Button Content="Все отзывы →"
+                                    Classes="outline"
+                                    HorizontalAlignment="Center"
+                                    Margin="0,15,0,0"
+                                    Click="ViewAllReviews_Click"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Window>

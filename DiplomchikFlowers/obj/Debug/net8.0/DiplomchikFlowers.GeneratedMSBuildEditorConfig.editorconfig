@@ -1,0 +1,87 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.TargetFramework = net8.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DiplomchikFlowers
+build_property.ProjectDir = C:\Users\lexus\Desktop\DiplomchikFlowers\DiplomchikFlowers\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/CartWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/CatalogWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/EditReviewWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/ForgotPasswordWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/NotificationManagerWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/NotificationsWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/OrdersWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/ProductDetailsWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/ProductEditWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/ProductReviewsWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/ProfileWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/RegisterWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/StatusSelectionWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/SupplierEditWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/SupplierWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/SupplyDetailsWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/SupplyEditWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/UserEditWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lexus/Desktop/DiplomchikFlowers/DiplomchikFlowers/UsersWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

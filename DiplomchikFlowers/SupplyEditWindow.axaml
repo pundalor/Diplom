@@ -1,0 +1,143 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DiplomchikFlowers.SupplyEditWindow"
+        Title="Редактирование поставки"
+        Width="750"
+        Height="650"
+        MinWidth="650"
+        MinHeight="550"
+        x:CompileBindings="False"
+        WindowStartupLocation="CenterOwner"
+        CanResize="True"
+        FontFamily="Segoe UI, sans-serif"
+        Icon="/Images/rose.ico">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FFF8F3FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#FF7A4B7C"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#FF2D2D2D"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#FF777777"/>
+        <SolidColorBrush x:Key="InputBorder" Color="#FFE1D5E6"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#FFE74C3C"/>
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#FF9B6B9D"/>
+            <GradientStop Offset="1" Color="#FFB083B5"/>
+        </LinearGradientBrush>
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="20" Opacity="0.15" Color="Black"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="TextBox, ComboBox, DatePicker">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource InputBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="14,12"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style Selector="TextBox:focus, ComboBox:focus, DatePicker:focus">
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="12,10"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="MinWidth" Value="120"/>
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="{StaticResource AccentDark}"/>
+        </Style>
+
+        <Style Selector="Button.secondary">
+            <Setter Property="Background" Value="#F0F0F0"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="12,10"/>
+            <Setter Property="MinWidth" Value="80"/>
+        </Style>
+        <Style Selector="Button.secondary:pointerover">
+            <Setter Property="Background" Value="#E0E0E0"/>
+        </Style>
+
+        <Style Selector="Button.danger">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource ErrorBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ErrorBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Width" Value="36"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style Selector="Button.danger:pointerover">
+            <Setter Property="Background" Value="#20E74C3C"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid Background="{StaticResource BackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="{StaticResource AccentBrush}" CornerRadius="0,0,20,20" Padding="20,15">
+            <Grid ColumnDefinitions="Auto, *">
+                <Button Content="← Назад" Classes="secondary" Click="Back_Click" Width="90" HorizontalAlignment="Left"/>
+                <TextBlock Grid.Column="1" Text="📦 Редактирование поставки" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <ScrollViewer Grid.Row="1" Margin="30,25">
+            <Border Background="{StaticResource CardBrush}" CornerRadius="30" Padding="30,25">
+                <StackPanel Spacing="15">
+                    <TextBlock Text="Поставщик *" FontSize="13" FontWeight="SemiBold"/>
+                    <ComboBox x:Name="SupplierComboBox" DisplayMemberBinding="{Binding Name}" PlaceholderText="Выберите поставщика"/>
+                    <TextBlock x:Name="SupplierError" Foreground="{StaticResource ErrorBrush}" FontSize="11" IsVisible="False"/>
+                    <TextBlock Text="Дата поставки *" FontSize="13" FontWeight="SemiBold"/>
+                    <DatePicker x:Name="SupplyDatePicker" />
+                    <TextBlock x:Name="DateError" Foreground="{StaticResource ErrorBrush}" FontSize="11" IsVisible="False"/>
+                    <TextBlock Text="Товары в поставке" FontSize="13" FontWeight="SemiBold" Margin="0,10,0,0"/>
+                    <ItemsControl x:Name="ProductsItemsControl" ItemsSource="{Binding ProductRows}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="#F9F9F9" CornerRadius="14" Padding="12" Margin="0,0,0,10">
+                                    <Grid ColumnDefinitions="*, 100, 100, Auto" ColumnSpacing="10">
+                                        <ComboBox Grid.Column="0" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedProduct}"
+                                                  DisplayMemberBinding="{Binding Name}" PlaceholderText="Выберите товар"/>
+                                        <TextBox Grid.Column="1" Text="{Binding Quantity}" Watermark="Кол-во"/>
+                                        <TextBox Grid.Column="2" Text="{Binding PurchasePrice}" Watermark="Цена"/>
+                                        <Button Grid.Column="3" Content="🗑" Classes="danger" Tag="{Binding}" Click="RemoveProductRow_Click"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <TextBlock x:Name="ProductsError" Foreground="{StaticResource ErrorBrush}" FontSize="11" IsVisible="False"/>
+                    <Button Content="➕ Добавить товар" Classes="secondary" Click="AddProductRow_Click" HorizontalAlignment="Left" Margin="0,5"/>
+                    <TextBlock Text="Примечание" FontSize="13" FontWeight="SemiBold" Margin="0,10,0,0"/>
+                    <TextBox x:Name="NotesBox" Watermark="Дополнительная информация" AcceptsReturn="True" Height="80"/>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="15" Margin="0,25,0,10">
+                        <Button Content="💾 Сохранить" Classes="primary" Click="Save_Click"/>
+                        <Button Content="✖ Отмена" Classes="secondary" Click="Cancel_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Window>

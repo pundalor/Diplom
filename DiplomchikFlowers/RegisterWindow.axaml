@@ -1,0 +1,48 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DiplomchikFlowers.RegisterWindow"
+        Title="Регистрация"
+        WindowStartupLocation="CenterOwner"
+        SizeToContent="WidthAndHeight"
+        Icon="/Images/rose.ico"
+        FontFamily="Segoe UI, sans-serif">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="TextBox">
+            <Setter Property="BorderBrush" Value="#FFD0B4D4"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="Margin" Value="0,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Window.Styles>
+
+    <StackPanel Margin="30" HorizontalAlignment="Center" Width="280">
+        <TextBlock Text="Регистрация нового пользователя" 
+                   FontSize="16" FontWeight="Bold" 
+                   Foreground="{StaticResource AccentBrush}" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <TextBox x:Name="FullNameBox" Watermark="ФИО"/>
+        <TextBox x:Name="EmailBox" Watermark="Электронная почта"/>
+        <TextBox x:Name="PhoneBox" Watermark="Телефон"/>
+        <TextBox x:Name="PasswordBox" Watermark="Пароль" PasswordChar="*"/>
+        <TextBox x:Name="ConfirmPasswordBox" Watermark="Подтвердите пароль" PasswordChar="*"/>
+
+        <Button Content="Зарегистрироваться" Click="Register_Click" Margin="0,20,0,5"/>
+        <Button Content="Отмена" Click="Cancel_Click" Background="LightGray" Foreground="Black"/>
+    </StackPanel>
+</Window>

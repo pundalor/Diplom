@@ -1,0 +1,45 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DiplomchikFlowers.EditReviewWindow"
+        Title="Редактирование отзыва"
+        Width="500" Height="300"
+        WindowStartupLocation="CenterOwner"
+        Icon="Images/rose.ico"
+        CanResize="False"
+        FontFamily="Segoe UI">
+    
+    <Window.Resources>
+        <SolidColorBrush x:Key="Accent" Color="#FF9B6B9D"/>
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Редактирование отзыва" FontSize="16" FontWeight="Bold" Margin="0,0,0,15"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Оценка: " VerticalAlignment="Center"/>
+            <ComboBox x:Name="RatingComboBox" Width="80" SelectedIndex="0">
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="1"/>
+            </ComboBox>
+            <TextBlock Text=" звезд" Margin="5,0,0,0" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <TextBox Grid.Row="2" x:Name="CommentBox" Watermark="Ваш комментарий..." AcceptsReturn="True" Height="80" Margin="0,0,0,15"/>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10">
+            <Button Content="Сохранить" Click="Save_Click" Background="{StaticResource Accent}" Foreground="White"/>
+            <Button Content="Отмена" Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

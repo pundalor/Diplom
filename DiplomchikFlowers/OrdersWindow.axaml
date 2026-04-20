@@ -1,0 +1,295 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DiplomchikFlowers"
+        x:Class="DiplomchikFlowers.OrdersWindow"
+        Title="📦 Управление заказами"
+        Width="1200"
+        Height="750"
+        MinWidth="900"
+        MinHeight="600"
+        WindowStartupLocation="CenterOwner"
+        Icon="/Images/rose.ico"
+        FontFamily="Segoe UI, sans-serif"
+        CanResize="True"
+        x:CompileBindings="False">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FFF8F3FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#FF7A4B7C"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#FF2D2D2D"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#FF777777"/>
+        <SolidColorBrush x:Key="InputBorder" Color="#FFE1D5E6"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#FFE74C3C"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#FF27AE60"/>
+        <SolidColorBrush x:Key="StatusPending" Color="#FFF39C12"/>
+        <SolidColorBrush x:Key="StatusPaid" Color="#FF3498DB"/>
+        <SolidColorBrush x:Key="StatusShipping" Color="#FF9B59B6"/>
+        <SolidColorBrush x:Key="StatusDelivered" Color="#FF27AE60"/>
+        <SolidColorBrush x:Key="StatusCancelled" Color="#FFE74C3C"/>
+        <SolidColorBrush x:Key="StatusReturn" Color="#FF95A5A6"/>
+
+        <LinearGradientBrush x:Key="WindowGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0" Color="#FFF5F0F6"/>
+            <GradientStop Offset="1" Color="#FFE8DFF0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#FF9B6B9D"/>
+            <GradientStop Offset="1" Color="#FFB083B5"/>
+        </LinearGradientBrush>
+
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="15" Opacity="0.12" Color="Black"/>
+        <DropShadowEffect x:Key="HeaderShadow" BlurRadius="10" Opacity="0.15" Color="Black"/>
+
+        <local:OrderStatusBrushConverter x:Key="OrderStatusBrushConverter"/>
+        <local:OrderStatusTextConverter x:Key="OrderStatusTextConverter"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource InputBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="12,10"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style Selector="TextBox:focus">
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Transitions">
+                <Setter.Value>
+                    <Transitions>
+                        <DoubleTransition Property="Opacity" Duration="0:0:0.2"/>
+                    </Transitions>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="{StaticResource AccentDark}"/>
+        </Style>
+
+        <Style Selector="Button.outline">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+        <Style Selector="Button.outline:pointerover">
+            <Setter Property="Background" Value="#20B083B5"/>
+        </Style>
+
+        <Style Selector="Button.iconButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="18"/>
+            <Setter Property="Width" Value="36"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style Selector="Button.iconButton:pointerover">
+            <Setter Property="Background" Value="#20B083B5"/>
+        </Style>
+
+        <Style Selector="Button.iconButton.danger">
+            <Setter Property="Foreground" Value="{StaticResource ErrorBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ErrorBrush}"/>
+        </Style>
+
+        <Style Selector="ComboBox">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource InputBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+
+        <Style Selector="ListBox">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+        </Style>
+        <Style Selector="ScrollViewer">
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+        <Style Selector="TextBlock.statusBadge">
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid Background="{StaticResource WindowGradient}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Background="{StaticResource HeaderGradient}"
+                Effect="{StaticResource HeaderShadow}"
+                CornerRadius="0,0,20,20"
+                Padding="20,15">
+            <Grid ColumnDefinitions="Auto, *, Auto, Auto, Auto" ColumnSpacing="15">
+                <Button Grid.Column="0"
+                        Content="← Назад"
+                        Classes="outline"
+                        Width="80"
+                        Click="Back_Click"
+                        VerticalAlignment="Center"
+                        Foreground="White"
+                        BorderBrush="White"/>
+                <TextBlock Grid.Column="1"
+                           Text="📦 Управление заказами"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           VerticalAlignment="Center"/>
+                <TextBox Grid.Column="2"
+                         x:Name="SearchBox"
+                         Watermark="🔍 Поиск по имени, email или телефону..."
+                         Width="260"
+                         Foreground="Black"
+                         Background="White"
+                         TextChanged="SearchBox_TextChanged"
+                         VerticalAlignment="Center"/>
+                <ComboBox Grid.Column="3"
+                          x:Name="StatusFilterCombo"
+                          PlaceholderText="Все статусы"
+                          Width="160"
+                          SelectionChanged="StatusFilterCombo_SelectionChanged"
+                          VerticalAlignment="Center">
+                    <ComboBoxItem Content="Все статусы" IsSelected="True" Tag="-1"/>
+                    <ComboBoxItem Content="Ожидает оплаты" Tag="1"/>
+                    <ComboBoxItem Content="Оплачен" Tag="2"/>
+                    <ComboBoxItem Content="В доставке" Tag="3"/>
+                    <ComboBoxItem Content="Доставлен" Tag="4"/>
+                    <ComboBoxItem Content="Отменён" Tag="5"/>
+                    <ComboBoxItem Content="Возврат" Tag="6"/>
+                </ComboBox>
+                <Button Grid.Column="4"
+                        Content="🔄"
+                        Classes="outline"
+                        Width="40"
+                        Click="Refresh_Click"
+                        VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="1" Margin="25,0,25,25">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Background="{StaticResource CardBrush}" CornerRadius="20" Margin="0,0,0,15" Padding="15,12">
+                <Grid ColumnDefinitions="Auto, *, Auto" ColumnSpacing="15">
+                    <TextBlock x:Name="CountTextBlock" Text="Найдено заказов: 0" FontSize="14" FontWeight="SemiBold" Foreground="{StaticResource TextSecondary}"/>
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10">
+                        <Button x:Name="StatsButton" Content="📊 Статистика" Classes="outline" Click="ShowStats_Click"/>
+                        <Button x:Name="ExportButton" Content="📤 Экспорт" Classes="outline" Click="Export_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <ScrollViewer Grid.Row="1">
+                <ItemsControl x:Name="OrdersItemsControl">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="{StaticResource CardBrush}"
+                                    CornerRadius="20"
+                                    Effect="{StaticResource CardShadow}"
+                                    Margin="0,0,0,15"
+                                    Padding="20">
+                                <Grid ColumnDefinitions="*, Auto" ColumnSpacing="20">
+                                    <StackPanel Grid.Column="0" Spacing="8">
+                                        <StackPanel Orientation="Horizontal" Spacing="10">
+                                            <TextBlock Text="{Binding OrderNumber}" FontWeight="Bold" FontSize="16" Foreground="{StaticResource TextPrimary}"/>
+                                            <Border Background="{Binding StatusId, Converter={StaticResource OrderStatusBrushConverter}}"
+                                                    CornerRadius="20"
+                                                    Padding="8,4">
+                                                <TextBlock Text="{Binding StatusId, Converter={StaticResource OrderStatusTextConverter}}"
+                                                           FontSize="11"
+                                                           FontWeight="SemiBold"
+                                                           Foreground="White"/>
+                                            </Border>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Spacing="20">
+                                            <TextBlock Text="👤" FontSize="14"/>
+                                            <TextBlock Text="{Binding CustomerName}" FontSize="14" Foreground="{StaticResource TextSecondary}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Spacing="20">
+                                            <TextBlock Text="📧" FontSize="14"/>
+                                            <TextBlock Text="{Binding CustomerEmail}" FontSize="14" Foreground="{StaticResource TextSecondary}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Spacing="20">
+                                            <TextBlock Text="📅" FontSize="14"/>
+                                            <TextBlock Text="{Binding OrderDate, StringFormat='dd.MM.yyyy HH:mm'}" FontSize="14" Foreground="{StaticResource TextSecondary}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Spacing="20">
+                                            <TextBlock Text="📍" FontSize="14"/>
+                                            <TextBlock Text="{Binding ShippingAddress}" FontSize="14" Foreground="{StaticResource TextSecondary}" TextWrapping="Wrap" MaxWidth="400"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Spacing="10" Margin="0,5,0,0">
+                                            <TextBlock Text="📦 Товаров:" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                                            <TextBlock Text="{Binding ItemsCount}" FontSize="12" FontWeight="SemiBold" Foreground="{StaticResource TextPrimary}"/>
+                                            <TextBlock Text="•" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                                            <TextBlock Text="Сумма:" FontSize="12" Foreground="{StaticResource TextSecondary}"/>
+                                            <TextBlock Text="{Binding TotalAmount, StringFormat='{}{0:C}'}" FontSize="14" FontWeight="Bold" Foreground="{StaticResource AccentBrush}"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                                        <Button Content="👁️" Classes="iconButton" Tag="{Binding}" Click="ViewOrder_Click" ToolTip.Tip="Просмотр"/>
+                                        <Button Content="✏️" Classes="iconButton" Tag="{Binding}" Click="EditStatus_Click" ToolTip.Tip="Изменить статус" 
+                                                IsVisible="{Binding CanManageOrders, RelativeSource={RelativeSource AncestorType=local:OrdersWindow}}"/>
+                                        <Button Content="🗑️" Classes="iconButton danger" Tag="{Binding}" Click="DeleteOrder_Click" ToolTip.Tip="Удалить" 
+                                                IsVisible="{Binding CanDeleteOrders, RelativeSource={RelativeSource AncestorType=local:OrdersWindow}}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+            <Border Grid.Row="2" Background="{StaticResource CardBrush}" CornerRadius="20" Margin="0,10,0,0" Padding="15,12">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+                    <Button x:Name="PrevPageButton" Content="◀ Назад" Classes="pagination" Click="PrevPage_Click" IsEnabled="False"/>
+                    <TextBlock x:Name="PageInfoTextBlock" Text="Страница 1 из 1" VerticalAlignment="Center" FontSize="14" Foreground="{StaticResource TextPrimary}"/>
+                    <Button x:Name="NextPageButton" Content="Вперед ▶" Classes="pagination" Click="NextPage_Click" IsEnabled="False"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,141 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DiplomchikFlowers.SupplierWindow"
+        Title="Управление поставщиками"
+        Width="1150"
+        Height="750"
+        x:CompileBindings="False"
+        Icon="Images/rose.ico"
+        MinWidth="900"
+        MinHeight="600"
+        WindowStartupLocation="CenterOwner"
+        Background="#FFF6F1F8"
+        FontFamily="Segoe UI">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="Accent" Color="#9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#7A4B7C"/>
+        <SolidColorBrush x:Key="Card" Color="White"/>
+        <SolidColorBrush x:Key="TextMain" Color="#2D2D2D"/>
+        <SolidColorBrush x:Key="TextSub" Color="#777"/>
+        <SolidColorBrush x:Key="Border" Color="#E5E5E5"/>
+        <SolidColorBrush x:Key="Hover" Color="#F3EAF7"/>
+        <SolidColorBrush x:Key="Selected" Color="#EFE3F4"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#E74C3C"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource Accent}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="Padding" Value="14,8"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="{StaticResource AccentDark}"/>
+        </Style>
+
+        <Style Selector="Button.outline">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Accent}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="Padding" Value="12,6"/>
+        </Style>
+
+        <Style Selector="Button.danger">
+            <Setter Property="Foreground" Value="{StaticResource ErrorBrush}"/>
+        </Style>
+
+        <Style Selector="TextBox">
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Border}"/>
+        </Style>
+
+        <Style Selector="ListBox">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style Selector="ListBoxItem:pointerover Border">
+            <Setter Property="Background" Value="{StaticResource Hover}"/>
+        </Style>
+        <Style Selector="ListBoxItem:selected Border">
+            <Setter Property="Background" Value="{StaticResource Selected}"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid RowDefinitions="Auto,*">
+        <Border Background="{StaticResource Accent}" Padding="20" CornerRadius="0,0,20,20">
+            <Grid ColumnDefinitions="Auto, *, Auto, Auto, Auto" ColumnSpacing="15">
+                <Button Grid.Column="0" Content="← Назад" Classes="outline" Click="Back_Click" Width="80" 
+                        Foreground="White" BorderBrush="White" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" Text="🏭 Поставщики" FontSize="22" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <TextBox x:Name="SearchBox" Grid.Column="2" Width="220" Watermark="Поиск..." TextChanged="SearchBox_TextChanged" VerticalAlignment="Center"/>
+                <Button Grid.Column="3" Content="➕ Добавить" Classes="primary" Click="AddSupplier_Click" VerticalAlignment="Center"/>
+                <Button Grid.Column="4" Content="🔄" Classes="outline" Click="Refresh_Click" Width="40" VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+        <Grid Grid.Row="1" Margin="20" ColumnDefinitions="1.2*,2*" ColumnSpacing="20">
+            <Border Background="{StaticResource Card}" CornerRadius="18" Padding="15">
+                <ListBox ItemsSource="{Binding Suppliers}" SelectedItem="{Binding SelectedSupplier}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border CornerRadius="14" Padding="12" Margin="0,0,0,10">
+                                <StackPanel Spacing="5">
+                                    <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="15"/>
+                                    <TextBlock Text="{Binding ContactPerson}" Foreground="{StaticResource TextSub}"/>
+                                    <TextBlock Text="{Binding Phone}" Foreground="{StaticResource TextSub}"/>
+                                    <TextBlock Text="{Binding City}" Foreground="{StaticResource TextSub}"/>
+                                    <StackPanel Orientation="Horizontal" Spacing="6" Margin="0,5,0,0">
+                                        <Button Content="✏️" Classes="outline" Tag="{Binding}" Click="EditSupplier_Click"/>
+                                        <Button Content="🗑" Classes="danger" Tag="{Binding}" Click="DeleteSupplier_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Border>
+
+            <Border Grid.Column="1" Background="{StaticResource Card}" CornerRadius="18" Padding="15">
+                <Grid RowDefinitions="Auto,Auto,*">
+                    <Grid ColumnDefinitions="*,Auto">
+                        <TextBlock Text="📦 Поставки" FontSize="16" FontWeight="SemiBold"/>
+                        <Button Grid.Column="1" Content="➕ Добавить" Classes="primary" Click="AddSupply_Click"/>
+                    </Grid>
+                    <Border Grid.Row="1" Margin="0,10" Padding="10" CornerRadius="12" Background="#F4F0F7" IsVisible="{Binding IsSupplierSelected}">
+                        <StackPanel>
+                            <TextBlock Text="{Binding SelectedSupplier.Name}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding SelectedSupplier.Phone}"/>
+                        </StackPanel>
+                    </Border>
+                    <ListBox Grid.Row="2" ItemsSource="{Binding Supplies}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="#FAFAFA" CornerRadius="12" Padding="10" Margin="0,0,0,8">
+                                    <Grid ColumnDefinitions="*,Auto">
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Id, StringFormat='Поставка №{0}'}" FontWeight="Bold"/>
+                                            <TextBlock Text="{Binding SupplyDate}"/>
+                                            <TextBlock Text="{Binding TotalAmount, StringFormat='Сумма: {0:C}'}"/>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="5">
+                                            <Button Content="📄" Tag="{Binding}" Click="ViewSupplyDetails_Click"/>
+                                            <Button Content="✏️" Tag="{Binding}" Click="EditSupply_Click"/>
+                                            <Button Content="🗑" Tag="{Binding}" Click="DeleteSupply_Click"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

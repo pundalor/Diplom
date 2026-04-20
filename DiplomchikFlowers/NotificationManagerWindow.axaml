@@ -1,0 +1,80 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DiplomchikFlowers.NotificationManagerWindow"
+        Title="Рассылка уведомлений"
+        Width="550" Height="550"
+        WindowStartupLocation="CenterOwner"
+        x:CompileBindings="False"
+        Icon="Images/rose.ico"
+        FontFamily="Segoe UI"
+        CanResize="False">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="BorderBrush" Color="#FFE0E0E0"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="TextBox, ComboBox">
+            <Setter Property="Margin" Value="0,5"/>
+            <Setter Property="Padding" Value="8,5"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="5,0"/>
+        </Style>
+        <Style Selector="Button:pointerover">
+            <Setter Property="Background" Value="#FF7A4B7C"/>
+        </Style>
+        <Style Selector="Button.cancel">
+            <Setter Property="Background" Value="#FFDDDDDD"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style Selector="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="📨 Создать уведомление" FontSize="18" FontWeight="Bold" 
+                   Foreground="{StaticResource AccentBrush}" Margin="0,0,0,15"/>
+        <TextBlock Grid.Row="1" Text="Кому:"/>
+        <ComboBox Grid.Row="2" x:Name="RecipientComboBox" Margin="0,0,0,10">
+            <ComboBoxItem Content="Всем пользователям" IsSelected="True"/>
+            <ComboBoxItem Content="Конкретному пользователю"/>
+        </ComboBox>
+        <StackPanel Grid.Row="3" x:Name="UserSelectorPanel" IsVisible="False" Spacing="5" Margin="0,0,0,10">
+            <TextBlock Text="Выберите пользователя:"/>
+            <ComboBox x:Name="UserComboBox" DisplayMemberBinding="{Binding Fullname}" />
+        </StackPanel>
+        <TextBlock Grid.Row="4" Text="Заголовок:"/>
+        <TextBox Grid.Row="5" x:Name="TitleBox" Watermark="Текст заголовка"/>
+        <TextBlock Grid.Row="6" Text="Сообщение:"/>
+        <TextBox Grid.Row="7" x:Name="MessageBox" Watermark="Введите текст уведомления..." 
+                 AcceptsReturn="True" Height="120" TextWrapping="Wrap"/>
+        <StackPanel Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Отправить" Click="Send_Click"/>
+            <Button Content="Отмена" Click="Cancel_Click" Classes="cancel"/>
+        </StackPanel>
+    </Grid>
+</Window>

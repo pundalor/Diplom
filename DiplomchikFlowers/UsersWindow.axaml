@@ -1,0 +1,261 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DiplomchikFlowers"
+        x:Class="DiplomchikFlowers.UsersWindow"
+        Title="👥 Управление пользователями"
+        Width="1000"
+        Height="700"
+        MinWidth="800"
+        MinHeight="600"
+        WindowStartupLocation="CenterOwner"
+        Icon="/Images/rose.ico"
+        FontFamily="Segoe UI, sans-serif"
+        CanResize="True"
+        x:CompileBindings="False">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FFF8F3FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#FF7A4B7C"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#FF2D2D2D"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#FF777777"/>
+        <SolidColorBrush x:Key="InputBorder" Color="#FFE1D5E6"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#FFE74C3C"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#FF27AE60"/>
+
+        <LinearGradientBrush x:Key="WindowGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0" Color="#FFF5F0F6"/>
+            <GradientStop Offset="1" Color="#FFE8DFF0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#FF9B6B9D"/>
+            <GradientStop Offset="1" Color="#FFB083B5"/>
+        </LinearGradientBrush>
+
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="15" Opacity="0.12" Color="Black"/>
+        <DropShadowEffect x:Key="HeaderShadow" BlurRadius="10" Opacity="0.15" Color="Black"/>
+
+        <local:ImagePathConverter x:Key="ImagePathConverter"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource InputBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="12,10"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style Selector="TextBox:focus">
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Transitions">
+                <Setter.Value>
+                    <Transitions>
+                        <DoubleTransition Property="Opacity" Duration="0:0:0.2"/>
+                    </Transitions>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="{StaticResource AccentDark}"/>
+        </Style>
+
+        <Style Selector="Button.outline">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+        <Style Selector="Button.outline:pointerover">
+            <Setter Property="Background" Value="#20B083B5"/>
+        </Style>
+
+        <Style Selector="Button.iconButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="18"/>
+            <Setter Property="Width" Value="36"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style Selector="Button.iconButton:pointerover">
+            <Setter Property="Background" Value="#20B083B5"/>
+        </Style>
+
+        <Style Selector="ComboBox">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource InputBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+        <Style Selector="ComboBox:focus">
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style Selector="ListBox">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+        </Style>
+        <Style Selector="ScrollViewer">
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid Background="{StaticResource WindowGradient}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                Background="{StaticResource HeaderGradient}"
+                Effect="{StaticResource HeaderShadow}"
+                CornerRadius="0,0,20,20"
+                Padding="20,15">
+            <Grid ColumnDefinitions="Auto, Auto, *, Auto, Auto, Auto" ColumnSpacing="15">
+                <Button Grid.Column="0"
+                        Content="← Назад"
+                        Classes="outline"
+                        Width="80"
+                        Click="Back_Click"
+                        VerticalAlignment="Center"
+                        Foreground="White"
+                        BorderBrush="White"/>
+                <TextBlock Grid.Column="1"
+                           Text="👥 Управление пользователями"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           VerticalAlignment="Center"/>
+                <Rectangle Grid.Column="2" Width="0"/>
+                <TextBox Grid.Column="3"
+                         x:Name="SearchBox"
+                         Watermark="🔍 Поиск по имени, email или телефону..."
+                         Width="260"
+                         Foreground="Black"
+                         Background="White"
+                         TextChanged="SearchBox_TextChanged"
+                         VerticalAlignment="Center"/>
+                <Button Grid.Column="4"
+                        Content="➕ Добавить пользователя"
+                        Classes="primary"
+                        Click="AddUser_Click"
+                        VerticalAlignment="Center"/>
+                <Button Grid.Column="5"
+                        Content="🔄"
+                        Classes="outline"
+                        Width="40"
+                        Click="Refresh_Click"
+                        VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+        <ScrollViewer Grid.Row="1" Margin="25">
+            <ItemsControl ItemsSource="{Binding Users}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="{StaticResource CardBrush}"
+                                CornerRadius="20"
+                                Effect="{StaticResource CardShadow}"
+                                Margin="0,0,0,15"
+                                Padding="20">
+                            <Grid ColumnDefinitions="Auto, *, Auto" ColumnSpacing="20">
+                                <Border Grid.Column="0"
+                                        Width="80" Height="80"
+                                        CornerRadius="40"
+                                        Background="{StaticResource AccentBrush}">
+                                    <Image Source="{Binding ImagePath, Converter={StaticResource ImagePathConverter}}"
+                                           Stretch="UniformToFill"
+                                           Width="80" Height="80">
+                                        <Image.Clip>
+                                            <EllipseGeometry Rect="0,0,80,80"/>
+                                        </Image.Clip>
+                                    </Image>
+                                </Border>
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="8">
+                                    <TextBlock Text="{Binding Fullname}"
+                                               FontSize="18"
+                                               FontWeight="Bold"
+                                               Foreground="{StaticResource TextPrimary}"/>
+                                    <StackPanel Orientation="Horizontal" Spacing="20">
+                                        <TextBlock Text="📧" FontSize="14"/>
+                                        <TextBlock Text="{Binding Email}"
+                                                   FontSize="14"
+                                                   Foreground="{StaticResource TextSecondary}"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" Spacing="20">
+                                        <TextBlock Text="📞" FontSize="14"/>
+                                        <TextBlock Text="{Binding Phone}"
+                                                   FontSize="14"
+                                                   Foreground="{StaticResource TextSecondary}"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" Spacing="20">
+                                        <TextBlock Text="🏙️" FontSize="14"/>
+                                        <TextBlock Text="{Binding City}"
+                                                   FontSize="14"
+                                                   Foreground="{StaticResource TextSecondary}"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Grid.Column="2"
+                                            Orientation="Horizontal"
+                                            Spacing="12"
+                                            VerticalAlignment="Center">
+                                    <ComboBox ItemsSource="{Binding DataContext.Roles, RelativeSource={RelativeSource AncestorType=Window}}"
+                                              SelectedItem="{Binding RoleName}"
+                                              Tag="{Binding}"
+                                              SelectionChanged="RoleCombo_SelectionChanged"
+                                              Width="160"/>
+                                    <Button Content="✏️"
+                                            Classes="iconButton"
+                                            Width="40" Height="40"
+                                            Tag="{Binding}"
+                                            Click="EditUser_Click"
+                                            ToolTip.Tip="Редактировать"/>
+                                    <Button Content="🗑️"
+                                        Classes="iconButton"
+                                        Width="40" Height="40"
+                                        Foreground="{StaticResource ErrorBrush}"
+                                        BorderBrush="{StaticResource ErrorBrush}"
+                                        Tag="{Binding}"
+                                        Click="DeleteUser_Click"
+                                        ToolTip.Tip="Удалить"
+                                        IsVisible="{Binding CanDelete}"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>

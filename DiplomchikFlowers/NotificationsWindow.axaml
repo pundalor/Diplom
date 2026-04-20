@@ -1,0 +1,205 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DiplomchikFlowers"
+        x:Class="DiplomchikFlowers.NotificationsWindow"
+        Title="Мои уведомления"
+        Width="750"
+        Height="600"
+        MinWidth="600"
+        x:CompileBindings="False"
+        MinHeight="400"
+        WindowStartupLocation="CenterOwner"
+        Icon="/Images/rose.ico"
+        FontFamily="Segoe UI, sans-serif"
+        CanResize="True">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FFF8F3FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#FF7A4B7C"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#FF2D2D2D"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#FF777777"/>
+        <SolidColorBrush x:Key="InputBorder" Color="#FFE1D5E6"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#FFE74C3C"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#FF27AE60"/>
+        <SolidColorBrush x:Key="ReadBackground" Color="#FFF9F9F9"/>
+        <SolidColorBrush x:Key="UnreadBackground" Color="#FFF0E6F5"/>
+        <LinearGradientBrush x:Key="WindowGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0" Color="#FFF5F0F6"/>
+            <GradientStop Offset="1" Color="#FFE8DFF0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#FF9B6B9D"/>
+            <GradientStop Offset="1" Color="#FFB083B5"/>
+        </LinearGradientBrush>
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="15" Opacity="0.12" Color="Black"/>
+        <DropShadowEffect x:Key="HeaderShadow" BlurRadius="10" Opacity="0.15" Color="Black"/>
+        <local:ReadBackgroundConverter x:Key="ReadBackgroundConverter"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Transitions">
+                <Setter.Value>
+                    <Transitions>
+                        <DoubleTransition Property="Opacity" Duration="0:0:0.2"/>
+                    </Transitions>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="{StaticResource AccentDark}"/>
+        </Style>
+
+        <Style Selector="Button.outline">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="14,8"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+        <Style Selector="Button.outline:pointerover">
+            <Setter Property="Background" Value="#20B083B5"/>
+        </Style>
+        <Style Selector="Button.headerButton">
+            <Setter Property="Background" Value="#40FFFFFF"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="14,8"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.headerButton:pointerover">
+            <Setter Property="Background" Value="#60FFFFFF"/>
+        </Style>
+
+        <Style Selector="Button.iconButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource TextSecondary}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="18"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Width" Value="32"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style Selector="Button.iconButton:pointerover">
+            <Setter Property="Foreground" Value="{StaticResource ErrorBrush}"/>
+            <Setter Property="Background" Value="#20E74C3C"/>
+        </Style>
+
+        <Style Selector="ScrollViewer">
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+    </Window.Styles>
+    <Grid Background="{StaticResource WindowGradient}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>  
+            <RowDefinition Height="*"/>     
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                Background="{StaticResource HeaderGradient}"
+                Effect="{StaticResource HeaderShadow}"
+                CornerRadius="0,0,20,20"
+                Padding="20,15">
+            <Grid ColumnDefinitions="Auto, *, Auto, Auto" ColumnSpacing="15">
+                <Button Grid.Column="0"
+                        Content="← Назад"
+                        Classes="headerButton"
+                        Click="Back_Click"
+                        VerticalAlignment="Center"/>
+                
+                <TextBlock Grid.Column="1"
+                           Text="🔔 Мои уведомления"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                
+                <Button Grid.Column="2"
+                        Content="🔄 Обновить"
+                        Classes="headerButton"
+                        Click="Refresh_Click"
+                        VerticalAlignment="Center"/>
+                
+                <Button Grid.Column="3"
+                        Content="✅ Отметить все"
+                        Classes="headerButton"
+                        Click="MarkAllRead_Click"
+                        VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+        <ScrollViewer Grid.Row="1" Margin="25,20,25,25">
+            <ItemsControl x:Name="NotificationsItemsControl">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="{Binding IsRead, Converter={StaticResource ReadBackgroundConverter}}"
+                                CornerRadius="16"
+                                Effect="{StaticResource CardShadow}"
+                                Margin="0,0,0,12"
+                                Padding="16">
+                            <Grid ColumnDefinitions="*, Auto">
+                                <StackPanel Grid.Column="0" Spacing="6">
+                                    <TextBlock Text="{Binding Title}"
+                                               FontWeight="Bold"
+                                               FontSize="15"
+                                               Foreground="{StaticResource TextPrimary}"/>
+                                    <TextBlock Text="{Binding Message}"
+                                               TextWrapping="Wrap"
+                                               FontSize="13"
+                                               Foreground="{StaticResource TextSecondary}"/>
+                                    <TextBlock Text="{Binding CreatedAt, StringFormat='📅 dd.MM.yyyy HH:mm'}"
+                                               FontSize="11"
+                                               Foreground="{StaticResource TextSecondary}"
+                                               Opacity="0.7"/>
+                                </StackPanel>
+                                <Button Grid.Column="1"
+                                        Content="✖"
+                                        Classes="iconButton"
+                                        Click="DeleteNotification_Click"
+                                        Tag="{Binding}"
+                                        VerticalAlignment="Center"
+                                        ToolTip.Tip="Удалить уведомление"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <Border x:Name="EmptyPanel"
+                Grid.Row="1"
+                Background="Transparent"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                IsVisible="False">
+            <StackPanel Spacing="15" HorizontalAlignment="Center">
+                <TextBlock Text="📭 Уведомлений пока нет"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource TextSecondary}"/>
+                <TextBlock Text="Когда появятся новые уведомления, они будут здесь"
+                           FontSize="13"
+                           Foreground="{StaticResource TextSecondary}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

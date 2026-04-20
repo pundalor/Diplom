@@ -1,0 +1,121 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DiplomchikFlowers.SupplierEditWindow"
+        Title="Редактирование поставщика"
+        Width="550"
+        Height="650"
+        MinWidth="500"
+        MinHeight="600"
+        WindowStartupLocation="CenterOwner"
+        Background="#FFF8F3FA"
+        FontFamily="Segoe UI"
+        Icon="/Images/rose.ico">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="Accent" Color="#9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#7A4B7C"/>
+        <SolidColorBrush x:Key="Card" Color="White"/>
+        <SolidColorBrush x:Key="Border" Color="#E5E5E5"/>
+        <SolidColorBrush x:Key="Error" Color="#E74C3C"/>
+    </Window.Resources>
+
+    <Window.Styles>
+
+        <Style Selector="TextBox">
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Border}"/>
+        </Style>
+
+        <Style Selector="TextBox:focus">
+            <Setter Property="BorderBrush" Value="{StaticResource Accent}"/>
+        </Style>
+
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource Accent}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style Selector="Button.secondary">
+            <Setter Property="Background" Value="#EEE"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+    </Window.Styles>
+
+    <Grid RowDefinitions="Auto,*">
+        <Border Background="{StaticResource Accent}"
+                Padding="20"
+                CornerRadius="0,0,20,20">
+
+            <TextBlock Text="🏭 Поставщик"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"/>
+        </Border>
+        <ScrollViewer Grid.Row="1">
+            <Border Background="{StaticResource Card}"
+                    CornerRadius="20"
+                    Padding="25"
+                    Margin="20">
+
+                <StackPanel Spacing="10">
+
+                    <TextBlock Text="Название *"/>
+                    <TextBox x:Name="NameBox"/>
+                    <TextBlock x:Name="NameError" Foreground="{StaticResource Error}" IsVisible="False"/>
+
+                    <TextBlock Text="Контактное лицо *"/>
+                    <TextBox x:Name="ContactPersonBox"/>
+                    <TextBlock x:Name="ContactPersonError" Foreground="{StaticResource Error}" IsVisible="False"/>
+
+                    <TextBlock Text="Телефон *"/>
+                    <TextBox x:Name="PhoneBox"/>
+                    <TextBlock x:Name="PhoneError" Foreground="{StaticResource Error}" IsVisible="False"/>
+
+                    <TextBlock Text="Email"/>
+                    <TextBox x:Name="EmailBox"/>
+                    <TextBlock x:Name="EmailError" Foreground="{StaticResource Error}" IsVisible="False"/>
+
+                    <TextBlock Text="Город"/>
+                    <TextBox x:Name="CityBox"/>
+                    <TextBlock x:Name="CityError" Foreground="{StaticResource ErrorBrush}" FontSize="11" IsVisible="False"/>
+
+                    <TextBlock Text="Адрес"/>
+                    <TextBox x:Name="AddressBox" AcceptsReturn="True" Height="80"/>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Spacing="15"
+                                Margin="0,20,0,0">
+
+                        <Button Classes="primary" Click="Save_Click" Width="140">
+                            <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center">
+                                <TextBlock Text="💾"/>
+                                <TextBlock Text="Сохранить"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Classes="secondary" Click="Cancel_Click" Width="140">
+                            <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center">
+                                <TextBlock Text="✖"/>
+                                <TextBlock Text="Отмена"/>
+                            </StackPanel>
+                        </Button>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </Border>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

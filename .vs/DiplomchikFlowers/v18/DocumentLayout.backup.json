@@ -1,0 +1,1002 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\cartwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\cartwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\cartwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\cartwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\democontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\democontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\models\\democontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\models\\democontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\producteditwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\producteditwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\producteditwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\producteditwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\notificationmanagerwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\notificationmanagerwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\notificationmanagerwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\notificationmanagerwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\notificationswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\notificationswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\notificationswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\notificationswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\supplyeditwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\supplyeditwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\supplyeditwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\supplyeditwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\suppliereditwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\suppliereditwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\suppliereditwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\suppliereditwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\supplierwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\supplierwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\supplydetailswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\supplydetailswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\supplydetailswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\supplydetailswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\supplierwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\supplierwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\usereditwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\usereditwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\usereditwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\usereditwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\userswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\userswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\userswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\userswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\profilewindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\profilewindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\profilewindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\profilewindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\editreviewwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\editreviewwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\editreviewwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\editreviewwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\orderswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\orderswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\orderswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\orderswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\productreviewswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\productreviewswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\productreviewswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\productreviewswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\catalogwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\catalogwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\catalogwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\catalogwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\forgotpasswordwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\forgotpasswordwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\registerwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\registerwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\forgotpasswordwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\forgotpasswordwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\registerwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\registerwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\selectedbackgroundconverter .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\selectedbackgroundconverter .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\statusselectionwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\statusselectionwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\productdetailswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\productdetailswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\statusselectionwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\statusselectionwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\dateonlytostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\dateonlytostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\readbackgroundconverter .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\readbackgroundconverter .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\productdetailswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\productdetailswindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\supply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\supply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\supplyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\supplyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|c:\\users\\lexus\\desktop\\diplomchikflowers\\diplomchikflowers\\model\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E91B6B58-EF36-4C55-9F4D-14E137DB3515}|DiplomchikFlowers\\DiplomchikFlowers.csproj|solutionrelative:diplomchikflowers\\model\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 24,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DemoContext.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Models\\DemoContext.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Models\\DemoContext.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Models\\DemoContext.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Models\\DemoContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwCUAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:01:37.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SupplyEditWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplyEditWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SupplyEditWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplyEditWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\SupplyEditWindow.axaml.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAiwBcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotificationManagerWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\NotificationManagerWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\NotificationManagerWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\NotificationManagerWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\NotificationManagerWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotificationManagerWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\NotificationManagerWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\NotificationManagerWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\NotificationManagerWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\NotificationManagerWindow.axaml.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAqwG4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotificationsWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\NotificationsWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\NotificationsWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\NotificationsWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\NotificationsWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NotificationsWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\NotificationsWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\NotificationsWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\NotificationsWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\NotificationsWindow.axaml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv2AAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductEditWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductEditWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ProductEditWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductEditWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\ProductEditWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductEditWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductEditWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ProductEditWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductEditWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\ProductEditWindow.axaml.cs",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAiwDUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SupplyEditWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplyEditWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SupplyEditWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplyEditWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\SupplyEditWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SupplierEditWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplierEditWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SupplierEditWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplierEditWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\SupplierEditWindow.axaml.cs",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAgwCsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SupplierEditWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplierEditWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SupplierEditWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplierEditWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\SupplierEditWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SupplierWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplierWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SupplierWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplierWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\SupplierWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SupplyDetailsWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplyDetailsWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SupplyDetailsWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplyDetailsWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\SupplyDetailsWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SupplyDetailsWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplyDetailsWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SupplyDetailsWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplyDetailsWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\SupplyDetailsWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SupplierWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplierWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SupplierWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SupplierWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\SupplierWindow.axaml.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAQwPMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserEditWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\UserEditWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\UserEditWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\UserEditWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\UserEditWindow.axaml.cs",
+              "ViewState": "AgIAACUBAAAAAAAAAAAqwFQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserEditWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\UserEditWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\UserEditWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\UserEditWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\UserEditWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UsersWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\UsersWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\UsersWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\UsersWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\UsersWindow.axaml.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAQwNwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UsersWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\UsersWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\UsersWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\UsersWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\UsersWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProfileWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProfileWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ProfileWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProfileWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\ProfileWindow.axaml.cs",
+              "ViewState": "AgIAAJkBAAAAAAAAAAAiwMcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProfileWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProfileWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ProfileWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProfileWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\ProfileWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\MainWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EditReviewWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\EditReviewWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\EditReviewWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\EditReviewWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\EditReviewWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EditReviewWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\EditReviewWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\EditReviewWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\EditReviewWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\EditReviewWindow.axaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\CartWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\CartWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\CartWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\CartWindow.axaml.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAYwNsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\CartWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\CartWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\CartWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\CartWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OrdersWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\OrdersWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\OrdersWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\OrdersWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\OrdersWindow.axaml.cs",
+              "ViewState": "AgIAABMCAAAAAAAAAIBJwEUCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrdersWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\OrdersWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\OrdersWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\OrdersWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\OrdersWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductReviewsWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductReviewsWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ProductReviewsWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductReviewsWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\ProductReviewsWindow.axaml.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAgwPEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CatalogWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\CatalogWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\CatalogWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\CatalogWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\CatalogWindow.axaml.cs",
+              "ViewState": "AgIAAK8CAAAAAAAAAADwv7wCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "StatusSelectionWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\StatusSelectionWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\StatusSelectionWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\StatusSelectionWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\StatusSelectionWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductReviewsWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductReviewsWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ProductReviewsWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductReviewsWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\ProductReviewsWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RegisterWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\RegisterWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\RegisterWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\RegisterWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\RegisterWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CatalogWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\CatalogWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\CatalogWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\CatalogWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\CatalogWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ForgotPasswordWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ForgotPasswordWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ForgotPasswordWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ForgotPasswordWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\ForgotPasswordWindow.axaml.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAcwNMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ForgotPasswordWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ForgotPasswordWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ForgotPasswordWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ForgotPasswordWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\ForgotPasswordWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SelectedBackgroundConverter .cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SelectedBackgroundConverter .cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\SelectedBackgroundConverter .cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\SelectedBackgroundConverter .cs",
+              "RelativeToolTip": "DiplomchikFlowers\\SelectedBackgroundConverter .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RegisterWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\RegisterWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\RegisterWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\RegisterWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\RegisterWindow.axaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwD8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\MainWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\MainWindow.axaml.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAqwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ProductDetailsWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductDetailsWindow.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ProductDetailsWindow.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductDetailsWindow.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\ProductDetailsWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DateOnlyToStringConverter.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\DateOnlyToStringConverter.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\DateOnlyToStringConverter.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\DateOnlyToStringConverter.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\DateOnlyToStringConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\OrderStatus.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "StatusSelectionWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\StatusSelectionWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\StatusSelectionWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\StatusSelectionWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\StatusSelectionWindow.axaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAhwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\OrderItem.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\OrderItem.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Order.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\Order.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Order.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Customer.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\Customer.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Customer.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\Customer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA0wBgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ReadBackgroundConverter .cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ReadBackgroundConverter .cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ReadBackgroundConverter .cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ReadBackgroundConverter .cs",
+              "RelativeToolTip": "DiplomchikFlowers\\ReadBackgroundConverter .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Cart.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\Cart.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Cart.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ImagePathConverter.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ImagePathConverter.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ImagePathConverter.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ImagePathConverter.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\ImagePathConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ProductDetailsWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductDetailsWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\ProductDetailsWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\ProductDetailsWindow.axaml.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\ProductDetailsWindow.axaml.cs",
+              "ViewState": "AgIAADIBAAAAAAAAAAAYwGEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Supplier.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\Supplier.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Supplier.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\Supplier.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wBcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Supply.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Supply.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\Supply.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Supply.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\Supply.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Review.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\Review.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Review.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Role.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\Role.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Role.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\CartItem.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\CartItem.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\CartItem.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DemoContext.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\DemoContext.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\DemoContext.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\DemoContext.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\DemoContext.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAA6wDEAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\App.axaml",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\App.axaml",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\App.axaml",
+              "RelativeToolTip": "DiplomchikFlowers\\App.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:59:57.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SupplyItem.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\SupplyItem.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\SupplyItem.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\SupplyItem.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\SupplyItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Favorite.cs",
+              "DocumentMoniker": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Favorite.cs",
+              "RelativeDocumentMoniker": "DiplomchikFlowers\\Model\\Favorite.cs",
+              "ToolTip": "C:\\Users\\lexus\\Desktop\\DiplomchikFlowers\\DiplomchikFlowers\\Model\\Favorite.cs",
+              "RelativeToolTip": "DiplomchikFlowers\\Model\\Favorite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:59:57.66Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

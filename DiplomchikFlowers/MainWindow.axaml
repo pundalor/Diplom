@@ -1,0 +1,148 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="700"
+        x:Class="DiplomchikFlowers.MainWindow"
+        Title="Окно авторизации"
+        Width="450" Height="700"
+        WindowStartupLocation="CenterScreen"
+        CanResize="False"
+        FontFamily="Segoe UI, sans-serif"
+        Icon="/Images/rose.ico">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FFF8F3FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="AccentDark" Color="#FF7A4B7C"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#FF2D2D2D"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#FF777777"/>
+        <SolidColorBrush x:Key="InputBorder" Color="#FFE1D5E6"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#FFE74C3C"/>
+        <LinearGradientBrush x:Key="WindowGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Offset="0" Color="#FFF5F0F6"/>
+            <GradientStop Offset="1" Color="#FFE8DFF0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="ButtonGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#FFB083B5"/>
+            <GradientStop Offset="1" Color="#FF9B6B9D"/>
+        </LinearGradientBrush>
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="20" Opacity="0.15" Color="Black"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource InputBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="14,12"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,8"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+
+        <Style Selector="TextBox:focus">
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Background" Value="{StaticResource ButtonGradient}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,8,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Transitions">
+                <Setter.Value>
+                    <Transitions>
+                        <DoubleTransition Property="Opacity" Duration="0:0:0.2"/>
+                    </Transitions>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style Selector="Button:pointerover">
+            <Setter Property="Opacity" Value="0.9"/>
+        </Style>
+
+        <Style Selector="Button.guest">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style Selector="Button.guest:pointerover">
+            <Setter Property="Background" Value="#20B083B5"/>
+        </Style>
+
+        <Style Selector="Button.text">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource TextSecondary}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+        </Style>
+
+        <Style Selector="Button.text:pointerover">
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+        </Style>
+
+        <Style Selector="CheckBox">
+            <Setter Property="Foreground" Value="{StaticResource TextSecondary}"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+        </Style>
+    </Window.Styles>
+
+    <Panel Background="{StaticResource WindowGradient}">
+        <Border Background="{StaticResource CardBrush}"
+                CornerRadius="40"
+                Effect="{StaticResource CardShadow}"
+                Margin="30"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Width="360">
+            <StackPanel Margin="30,30,30,30" Spacing="5">
+                <Image Source="/Images/rose.ico" 
+                       Width="80" 
+                       Height="80" 
+                       Margin="0,0,0,10"
+                       HorizontalAlignment="Center"/>
+                
+                <TextBlock Text="🌸 Добро пожаловать 🌸"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource AccentBrush}"
+                           HorizontalAlignment="Center"
+                           Margin="0,5,0,15"/>
+                
+                <TextBlock Text="Вход в аккаунт"
+                           FontSize="16"
+                           Foreground="{StaticResource TextSecondary}"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,15"/>
+
+                <TextBox x:Name="LoginBox" Watermark="Электронная почта"/>
+                <TextBox x:Name="PasswordBox" Watermark="Пароль"/>
+                <CheckBox x:Name="ShowPasswordCheckBox" Content="Показать пароль" Margin="0,-5,0,5"/>
+                <Button x:Name="AuthButton" Content="Войти" Click="Auth_Click"/>
+                <Button x:Name="GuestButton" Content="Продолжить как гость" Classes="guest" Click="Guest_Click"/>
+                <Button x:Name="ExitButton" Content="Выйти из приложения" 
+                        Background="#FFF0F0F0" Foreground="#FF666666" 
+                        Margin="0,15,0,15" Click="Exit_Click"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="15" Margin="0,5,0,0">
+                    <Button x:Name="RegisterButton" Content="Регистрация" Classes="text" Click="Register_Click"/>
+                    <Button x:Name="ForgotPasswordButton" Content="Забыли пароль?" Classes="text" Click="ForgotPassword_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Panel>
+</Window>

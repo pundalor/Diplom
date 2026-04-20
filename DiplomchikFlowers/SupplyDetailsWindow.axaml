@@ -1,0 +1,71 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DiplomchikFlowers.SupplyDetailsWindow"
+        Title="Детали поставки"
+        Width="700"
+        Height="550"
+        Icon="Images/rose.ico"
+        x:CompileBindings="False"
+        WindowStartupLocation="CenterOwner"
+        FontFamily="Segoe UI"
+        Background="#FFF6F6F6">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="Primary" Color="#FF9B6B9D"/>
+        <SolidColorBrush x:Key="Card" Color="White"/>
+    </Window.Resources>
+
+    <Grid RowDefinitions="Auto,*" Margin="15">
+        <Border Background="{StaticResource Card}"
+                Padding="15"
+                CornerRadius="10"
+                BoxShadow="0 2 10 #22000000">
+
+            <StackPanel Spacing="5">
+                <TextBlock Text="{Binding SupplyDate, StringFormat='Дата: {0:dd.MM.yyyy}'}"
+                           FontWeight="Bold"
+                           FontSize="16"/>
+
+                <TextBlock Text="{Binding Supplier.Name, StringFormat='Поставщик: {0}'}"
+                           Opacity="0.8"/>
+
+                <TextBlock Text="{Binding Notes, StringFormat='Примечание: {0}'}"
+                           TextWrapping="Wrap"
+                           Opacity="0.7"/>
+            </StackPanel>
+        </Border>
+        <ScrollViewer Grid.Row="1" Margin="0,15,0,0">
+            <ItemsControl ItemsSource="{Binding SupplyItems}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+
+                        <Border Background="{StaticResource Card}"
+                                CornerRadius="10"
+                                Padding="12"
+                                Margin="0,0,0,10"
+                                BoxShadow="0 2 8 #22000000">
+
+                            <Grid ColumnDefinitions="2*,Auto,Auto,Auto" ColumnSpacing="15">
+                                <TextBlock Text="{Binding Product.Name}"
+                                           FontWeight="Bold"
+                                           VerticalAlignment="Center"/>
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding Quantity}"
+                                           VerticalAlignment="Center"/>
+                                <TextBlock Grid.Column="2"
+                                           Text="{Binding PurchasePrice, StringFormat='{}{0:C}'}"
+                                           VerticalAlignment="Center"/>
+                                <TextBlock Grid.Column="3"
+                                           Text="{Binding Total, StringFormat='{}{0:C}'}"
+                                           Foreground="Green"
+                                           FontWeight="Bold"
+                                           VerticalAlignment="Center"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
